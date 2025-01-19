@@ -1,0 +1,20 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welkom</title>
+</head>
+<body>
+  <h1>Welkom! De huidige tijd is: <%= currentHour %>:00</h1>
+
+  <% if (mensaje) { %>
+    <p style="color: red;"><%= mensaje %></p>
+  <% } %>
+
+  <a href="/endroute">
+    <button>Ga naar de endroute</button>
+  </a>
+</body>
+</html>
